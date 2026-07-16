@@ -1,0 +1,23 @@
+# Instructies voor Claude Code — Skager website
+
+## Context
+Statische site (pure HTML, inline styles + `assets/responsive.css`) voor Skager BV,
+adviesbureau voor integratie van warmte- en elektriciteitssystemen. Live op skager.eu
+via Cloudflare Pages; elke push naar `main` deployt automatisch.
+
+## Huisstijl (variant K4)
+- Kleuren: blauwgroen `#3E8E9E`, diep navy `#1C3B5E`, donkere achtergrond `#0E2233`,
+  lichte achtergrond `#F2F4F5`, accenttekst `#7FC2CE`, secundaire tekst `#41597A`.
+- Typografie: **Jost** (300/400/500) voor lopende tekst en koppen,
+  **IBM Plex Mono** voor kickers/labels (letter-spacing ~.14–.18em, kleurin accent).
+- Toon: zakelijk, kalm, Nederlands. Geen uitroeptekens, geen marketingjargon.
+- Hoekloos design: knoppen en kaarten hebben géén border-radius.
+
+## Regels bij wijzigingen
+1. Behoud de bestaande inline-style-aanpak; nieuwe secties volgen de patronen van
+   bestaande secties (kopieer een vergelijkbaar blok en pas de inhoud aan).
+2. Navigatie en footer zijn op elke pagina identiek — wijzig ze op álle pagina's tegelijk.
+3. Controleer na elke wijziging: interne links, asset-paden, en mobiele weergave
+   (responsive.css overschrijft o.a. paddings en gridkolommen onder 900/720px).
+4. Publiceer nooit interne documenten (projectplannen e.d.) in deze repo.
+5. Commit-berichten in het Nederlands, kort en beschrijvend.
