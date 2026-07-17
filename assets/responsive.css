@@ -1,0 +1,12 @@
+/* Responsive laag bovenop het desktop-ontwerp (overschrijft inline styles waar nodig) */
+@media (max-width: 960px) {
+  [style*=" 72px"], [style*=":72px"] { padding-left: 28px !important; padding-right: 28px !important; }
+  h1 { font-size: 44px !important; }
+  h2 { font-size: 28px !important; }
+}
+@media (max-width: 720px) {
+  h1 { font-size: 34px !important; }
+  [style*="display:flex"] { flex-wrap: wrap; }
+  [style*="display:grid"] { grid-template-columns: 1fr !important; }
+  [style*="font-size:30px"] { font-size: 24px !important; }
+}
